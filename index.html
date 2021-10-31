@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="A Game Mania é uma loja do segmento de games e tecnologia, que atende presencialmente em SP e online para todo o Brasil."
+    />
+    <meta name="keywords" content="Jogos, Celulares, Notebooks, Tecnologia" />
+    <meta name="author" content="Mayara Saldanha" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Game Mania</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="OwlCarousel/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="OwlCarousel/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"/>
+  </head>
+
+  <body>
+    <header>
+      <!-- Topo -->
+      <div class="container_grid position">
+        <a href="index.html"
+          ><img class="logo"
+            src="imagens/Logo.svg"
+            alt="Logo do site Game Mania"
+            width="307"
+            height="144"
+        /></a>
+        <form id="searchbar">
+          <input
+            type="text"
+            id="searchbar_text"
+            placeholder="O que você procura?"
+          />
+          <img class="search"
+            src="imagens/icon_pesquisar.svg"
+            alt="Buscar"
+            width="40"
+            height="40"
+          />
+        </form>
+        <div>
+          <a href="#"
+            ><img class="cart"
+              src="imagens/icon_cart.svg"
+              alt="Carrinho"
+              width="64"
+              height="64"
+          /></a>
+          <p class="icon_text_header" href="#">Carrinho</p>
+        </div>
+        <div>
+          <a href="#"
+            ><img class="login"
+              src="imagens/icon_login.svg"
+              alt="Login"
+              width="64"
+              height="64"
+          /></a>
+          <p class="icon_text_header">Login</p>
+        </div>
+        <!-- Teste com Menu Jquery 
+          <div><a href="#" id="barras"
+            ><img
+              class="menu_bar"
+              src="imagens/icon_menu.svg"
+              alt="Menu de Barras"
+          /></a>
+        </div> -->
+        <div>
+          <a href="#" onclick="mostrarMenu()"
+            ><img
+              class="menu_bar"
+              src="imagens/icon_menu.svg"
+              alt="Menu de Barras"
+          /></a>
+        </div>
+      </div>
+
+      <!-- Barra de Menus -->
+      <div class="menu_background">
+        <nav id="menu" class="menu container_grid position_menu">
+          <a href="index.html">Home</a>
+          <a href="#">Departamentos</a>
+          <a href="monteSeuPc.html">Monte seu PC</a>
+          <a href="galeria.html">Galeria</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <div id="banner">
+      <h1 id="banner_text" class="container_grid">
+        Só na Game Mania você encontra tudo sobre games e tecnologia!
+      </h1>
+    </div>
+
+    <!-- Seção de Ícones -->
+    <section class="icons_background">
+      <div class="container_grid position">
+        <div class="icons">
+          <img class="atendimento"
+            src="imagens/icon_atendimento.svg"
+            alt="Ícone Atendimento Personalizado"
+            width="120"
+            height="100"
+          />
+          <p class="icon_text_section">
+            Atendimento personalizado e compra segura
+          </p>
+        </div>
+        <img src="imagens/Line 2.png" alt="Imagen de linha divisória" height="80"/>
+        <div class="icons">
+          <img class="qualidade"
+            src="imagens/icon_qualidade.svg"
+            alt="Ícone Garantia de Qualidade"
+            width="100"
+            height="104"
+          />
+          <p class="icon_text_section">
+            Garantia de qualidade e satisfação total do cliente
+          </p>
+        </div>
+        <img src="imagens/Line 2.png" alt="Imagem de linha divisória" height="80"/>
+        <div class="icons">
+          <img class="entrega"
+            src="imagens/icon_entrega.svg"
+            alt="Ícone Entrega Rápida"
+            width="120"
+            height="100"
+          />
+          <p class="icon_text_section">
+            Entrega rápida e facilitada para todo o Brasil
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Ofertas -->
+    <section class="products_background">
+      <div class="container">
+        <h2>Ofertas da Semana</h2>
+        <div class="row">
+        <div class="major-carousel js-carousel owl-carousel">
+          <div class="media media-custom d-block">
+            <a href="#">
+              <img
+                src="imagens/oferta01.jpg"
+                alt="Combo Plastation Vr"
+                class="img-fluid"
+              />
+            </a>
+            <div class="media-body">
+              <p class="ofertas_text">
+                Combo VR <strong>R$ 2.000,00</strong>
+              </p>
+              <a href="#" class="btn_buy">Comprar</a>
+            </div>
+          </div>
+          <div class="media media-custom d-block">
+            <a href="#">
+              <img
+                src="imagens/oferta02.jpg"
+                alt="Notebook Asus"
+                class="img-fluid"
+              />
+            </a>
+            <div class="media-body">
+              <p class="ofertas_text">
+                Notebook Asus <strong>R$ 3.000,00</strong>
+              </p>
+              <a href="#" class="btn_buy">Comprar</a>
+            </div>
+          </div>
+          <div class="media media-custom d-block">
+            <a href="#">
+              <img
+                src="imagens/oferta03.jpg"
+                alt="Headset Gamer"
+                class="img-fluid"
+              />
+            </a>
+            <div class="media-body">
+              <p class="ofertas_text">
+                Headset Gamer <strong>R$ 99,90</strong>
+              </p>
+              <a href="#" class="btn_buy">Comprar</a>
+            </div>
+          </div>
+          <div class="media media-custom d-block">
+            <a href="#">
+              <img
+                src="imagens/oferta04.jpg"
+                alt="Cadeira Gamer"
+                class="img-fluid"
+              />
+            </a>
+            <div class="media-body">
+              <p class="ofertas_text">
+                Cadeira Gamer <strong>R$ 1.590,90</strong>
+              </p>
+              <a href="#" class="btn_buy">Comprar</a>
+            </div>
+          </div>
+          <div class="media media-custom d-block">
+            <a href="#">
+              <img
+                src="imagens/oferta05.jpg"
+                alt="Jogo FIFA 21"
+                class="img-fluid"
+              />
+            </a>
+            <div class="media-body">
+              <p class="ofertas_text">
+                Jogo FIFA 21 <strong>R$ 250,00</strong>
+              </p>
+              <a href="#" class="btn_buy">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Produtos Recomendados -->
+    <section class="products_background">
+      <div class="container">
+        <h2>Recomendados</h2>
+        <div class="row">
+        <div class="major-carousel js-carousel-2 owl-carousel">
+            <div class="media media-custom-2 d-block text-left">
+              <a href="#">
+                <img
+                  src="imagens/recomendado01.jpg"
+                  alt="Imagem de uma mão segurando um Smartphone"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="media-body-2">
+                <a href="#" class="recomend_text">Os melhores smatphones</a>
+              </div>
+            </div>
+            <div class="media media-custom-2 d-block text-left">
+              <a href="#">
+                <img
+                  src="imagens/recomendado02.jpg"
+                  alt="Imagem de mesa de escritório com notebook, desktop e tablet"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="media-body-2">
+                <a href="#" class="recomend_text">Tudo para seu home office</a>
+              </div>
+            </div>
+            <div class="media media-custom-2 d-block text-left">
+              <a href="#">
+                <img
+                  src="imagens/recomendado03.png"
+                  alt="Imagem de mesa com duas telas de computador e uma cadeira gamer"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="media-body-2">
+                <a href="#" class="recomend_text">Monte seu PC Gamer</a>
+              </div>
+            </div>
+            <div class="media media-custom-2 d-block text-left">
+              <a href="#">
+                <img
+                  src="imagens/recomendado04.png"
+                  alt="Imagem de crianças jogando videogame"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="media-body-2">
+                <a href="#" class="recomend_text">As últimas novidades em games</a>
+              </div>
+            </div>
+        </div> 
+      </div> 
+    </section>
+
+      <!-- Seção Newsletter -->
+    <section class="newsletter_background">
+      <div class="container">
+        <div class="row">
+          <h3 class="col news_text">Assine nossa newsletter!</h3>
+          <form action="" class="col newsletter_box">
+            <input type="email" id="email_newsletter" placeholder="Seu e-mail aqui" required>
+            <button onclick="cadastrarEmail()" id="btn_newsletter"><img class="newsletter" src="imagens/icon_newsletter.svg"></button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+
+      <!-- Links do Rodapé -->
+      <div class="footer_gray_background">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <nav class="footer_menu">
+                <h3>Institucional</h3>
+                <a href="sobre.html">Quem Somos</a>
+                <a href="#">Pagamentos</a>
+                <a href="depoimentos.html">Depoimentos de Clientes</a>
+                <a href="#">Departamentos</a>
+                <a href="contato.html">Contato</a>
+              </nav>
+            </div>
+            <div class="col">
+              <div class="footer_atendimento">
+                <h3>Atendimento</h3>
+                <a href="#"><img class="local" src="imagens/icon_local.svg" alt="Ícone Local" width="48" height="48"></a>
+                <p class="atendimento_text">Avenida Lorem Ipsum, n. 10, Centro, São Paulo-SP
+                  Fone (11) 0000-0000</p>
+              </div>
+            </div>
+            <div class="col">
+              <nav class="footer_icons">
+                <a href="#"><img class="facebook" src="imagens/icon_face.svg" alt="Ícone Facebook" width="64" height="64"></a>
+                <a href="#"><img class="instagram" src="imagens/icon_insta.svg" alt="Ícone Instagram" width="64" height="64"></a>
+                <a href="#"><img class="twitter" src="imagens/icon_twitter.svg" alt="Ícone Twitter" width="64" height="64"></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- Copyright - Rodapé -->
+      <div class="footer_black_background">
+        <div class="container">
+          <p class="footer_text">Game Mania Informática e Games Ltda. CNPJ: 00.000.000/0001 | São Paulo - SP</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Links Javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="OwlCarousel/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/scritpt.js"></script>
+  </body>
+</html>

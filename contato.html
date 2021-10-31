@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="A Game Mania é uma loja do segmento de games e tecnologia, que atende presencialmente em SP e online para todo o Brasil."
+    />
+    <meta name="keywords" content="Jogos, Celulares, Notebooks, Tecnologia" />
+    <meta name="author" content="Mayara Saldanha" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Game Mania</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- Topo -->
+      <div class="container_grid position">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="imagens/Logo.svg"
+            alt="Logo do site Game Mania"
+            width="307"
+            height="144"
+        /></a>
+        <form id="searchbar">
+          <input
+            type="text"
+            id="searchbar_text"
+            placeholder="O que você procura?"
+          />
+          <img
+            class="search"
+            src="imagens/icon_pesquisar.svg"
+            alt="Buscar"
+            width="40"
+            height="40"
+          />
+        </form>
+        <div>
+          <a href="#"
+            ><img
+              class="cart"
+              src="imagens/icon_cart.svg"
+              alt="Carrinho"
+              width="64"
+              height="64"
+          /></a>
+          <p class="icon_text_header" href="#">Carrinho</p>
+        </div>
+        <div>
+          <a href="#"
+            ><img
+              class="login"
+              src="imagens/icon_login.svg"
+              alt="Login"
+              width="64"
+              height="64"
+          /></a>
+          <p class="icon_text_header">Login</p>
+        </div>
+        <div>
+          <a href="#" onclick="mostrarMenu()"
+            ><img
+              class="menu_bar"
+              src="imagens/icon_menu.svg"
+              alt="Menu de Barras"
+          /></a>
+        </div>
+      </div>
+
+      <!-- Barra de Menus -->
+      <div class="menu_background">
+        <nav id="menu" class="menu container_grid position_menu">
+          <a href="index.html">Home</a>
+          <a href="#">Departamentos</a>
+          <a href="monteSeuPc.html">Monte seu PC</a>
+          <a href="galeria.html">Galeria</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="#">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <!--contato-->
+    <section class="contato_background">
+      <div class="container_grid contato_text">
+        <h1>Central de Atendimento ao Cliente</h1>
+        <p>
+          Confira abaixo as formas de contato disponíveis em nossa loja, estamos
+          ansiosos em lhe atender da melhor maneira possível.
+        </p>
+      </div>
+      <div class="container_grid contato_box">
+        <div class="contato_info">
+          <h2>Endereço:</h2>
+          <p>Avenida Lorem Ipsum, n. 10, Centro, São Paulo-SP</p>
+          <h2>Contato:</h2>
+          <p>(11) 0000-0000 e (11) 00000-0000</p>
+          <p>gamemania@gamemania.com</p>
+          <h2>Horário de Atendimento</h2>
+          <p>
+            Atendemos presencialmente de segunda a sexta das 8h às 18h e pelo
+            Whatsapp de segunda a sábado das 8h às 21h.
+          </p>
+          <h2>Dados da Empresa:</h2>
+          <p>
+            Game Mania Informática e Games Ltda. CNPJ: 00.000.000/0001 | São
+            Paulo - SP
+          </p>
+          <br />
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Newsletter -->
+    <section class="newsletter_background">
+      <div class="container">
+        <div class="row">
+          <h3 class="col news_text">Assine nossa newsletter!</h3>
+          <form action="" class="col newsletter_box">
+            <input
+              type="email"
+              id="email_newsletter"
+              placeholder="Seu e-mail aqui"
+              required
+            />
+            <button onclick="cadastrarEmail()" id="btn_newsletter">
+              <img class="newsletter" src="imagens/icon_newsletter.svg" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Links do Rodapé -->
+    <footer>
+      <div class="footer_gray_background">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <nav class="footer_menu">
+                <h3>Institucional</h3>
+                <a href="sobre.html">Quem Somos</a>
+                <a href="#">Pagamentos</a>
+                <a href="depoimentos.html">Depoimentos de Clientes</a>
+                <a href="#">Departamentos</a>
+                <a href="#">Contato</a>
+              </nav>
+            </div>
+            <div class="col">
+              <div class="footer_atendimento">
+                <h3>Atendimento</h3>
+                <a href="#"
+                  ><img
+                    class="local"
+                    src="imagens/icon_local.svg"
+                    alt="Ícone Local"
+                    width="48"
+                    height="48"
+                /></a>
+                <p class="atendimento_text">
+                  Avenida Lorem Ipsum, n. 10, Centro, São Paulo-SP Fone (11)
+                  0000-0000
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <nav class="footer_icons">
+                <a href="#"
+                  ><img
+                    class="facebook"
+                    src="imagens/icon_face.svg"
+                    alt="Ícone Facebook"
+                    width="64"
+                    height="64"
+                /></a>
+                <a href="#"
+                  ><img
+                    class="instagram"
+                    src="imagens/icon_insta.svg"
+                    alt="Ícone Instagram"
+                    width="64"
+                    height="64"
+                /></a>
+                <a href="#"
+                  ><img
+                    class="twitter"
+                    src="imagens/icon_twitter.svg"
+                    alt="Ícone Twitter"
+                    width="64"
+                    height="64"
+                /></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright - Rodapé -->
+      <div class="footer_black_background">
+        <div class="container">
+          <p class="footer_text">
+            Game Mania Informática e Games Ltda. CNPJ: 00.000.000/0001 | São
+            Paulo - SP
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Links Javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="OwlCarousel/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/scritpt.js"></script>
+  </body>
+</html>

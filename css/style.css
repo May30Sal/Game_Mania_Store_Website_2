@@ -1,0 +1,1104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container_grid {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.position {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Topo */
+
+header {
+  background-color: #00f800;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+#searchbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  border: solid 1px;
+  border-radius: 30px;
+  width: 492px;
+  height: 65px;
+}
+
+#searchbar_text {
+  padding-left: 5px;
+  font: 500 30px "Montserrat", sans-serif;
+  border: none;
+  height: 36px;
+  text-align: center;
+}
+
+.icon_text_header {
+  font: 500 18px "Montserrat", sans-serif;
+  text-align: center;
+}
+
+/* Barra de Menu */
+
+.container_grid_menu {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.position_menu {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_bar {
+  display: none;
+}
+
+.menu_background {
+  background-color: #0b0b0c;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+.menu a:hover {
+  background-color: #00f800;
+  color: #000000;
+}
+
+/* Banner */
+
+#banner {
+  background-image: url(../imagens/ImgBanner.png);
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#banner_text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 801px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+/* Barra de Ícones */
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+}
+
+.icons_background {
+  background-color: #d0d1d1;
+  height: 178px;
+}
+
+.icon_text_section {
+  font: 500 1.75rem "Montserrat", sans-serif;
+  color: 000000;
+  text-align: center;
+}
+
+/* Section Ofertas */
+
+.products_background {
+  background-color: #181d24;
+  height: 100%;
+}
+
+/* .ofertas {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+h2 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  padding: 60px 0;
+}
+
+.ofertas_text {
+  color: #ffffff;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  padding: 15px;
+  text-align: center;
+}
+
+.btn_buy {
+  background-color: #00f800;
+  color: #000000;
+  font: bold 1.75rem "Montserrat", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  width: 220px;
+  display: block;
+  margin: 20px auto;
+}
+
+
+/*Ofertas Carousel*/
+.media-custom a:hover {
+  color: #ffffff;
+}
+
+.media-custom img {
+  height: 300px;
+  object-fit: cover;
+  -webkit-transition: 3s all ease;
+  -o-transition: 3s all ease;
+  transition: 3s all ease;
+}
+
+.media-custom:focus,
+.media-custom:hover {
+  top: -2px;
+  -webkit-box-shadow: 0 2px 40px 0 rgba(0, 0, 0.2);
+  box-shadow: 0 2px 40px 0 rgba(0, 0, 0.2);
+}
+
+.media-custom:focus img,
+.media-custom:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.media-custom {
+  padding: 30px;
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.owl-dots {
+  display: none;
+}
+
+/* Seção Recomendados */
+
+.recomend_text {
+  color: #ffffff;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  /* padding: 15px; */
+}
+
+/*Recomendados Carousel*/
+.media-custom-2 img {
+  height: 420px;
+  object-fit: cover;
+  -webkit-transition: 3s all ease;
+  -o-transition: 3s all ease;
+  transition: 3s all ease;
+}
+
+.media-custom-2:focus img,
+.media-custom-2:hover img {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.media-body-2 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.media-body-2 {
+  padding: 20px 0 30px 15px;
+}
+
+/* Seção Newsletter */
+
+.newsletter_background {
+  background-color: #00f800;
+  height: 100%;
+}
+
+.news_text {
+  color: #000000;
+  font: bold 1.75rem "Montserrat", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.newsletter_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+#email_newsletter {
+  background-color: #d0d1d1;
+  height: 68px;
+  width: 70%;
+  font: 500 1.6rem "Montserrat", sans-serif;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Rodapé */
+
+.footer_gray_background {
+  background-color: #d0d1d1;
+  height: 100%;
+  padding: 10px;
+}
+
+footer h3 {
+  color: #000000;
+  font: bold 1.75rem "Montserrat", sans-serif;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer_menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: #000000;
+  font: 500 1.6rem "Montserrat", sans-serif;
+  padding: 5px;
+}
+
+.footer_menu a:hover {
+  color: #00f800;
+  background-color: #0b0b0c;
+}
+
+.footer_atendimento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.atendimento_text {
+  color: #000000;
+  font: 500 1.6rem "Montserrat", sans-serif;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer_black_background {
+  background-color: #0b0b0c;
+}
+
+.footer_text {
+  font: 500 1.6rem "Montserrat", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Galeria */
+
+.galeria_text {
+  margin-top: 250px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.galeria_text p {
+  color: #ffffff;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  padding: 15px;
+}
+
+.galeria_text h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+}
+
+.galeria_images {
+  margin-bottom: 30px;
+}
+
+/* Sobre */
+
+.sobre_text {
+  margin-top: 250px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.sobre_text p {
+  color: #ffffff;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  padding: 15px;
+}
+
+.sobre_text h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+}
+
+.sobre_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sobre_box {
+  background-color: #d0d1d1;
+  margin: 10px;
+  padding: 10px;
+  flex-basis: 100%;
+}
+
+.sobre_box p {
+  color: #000000;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.sobre_box h3 {
+  color: #000000;
+  text-align: center;
+  font: 700 2rem "Montserrat", sans-serif;
+}
+
+/* Monte seu Pc */
+
+.monte_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 250px;
+}
+
+.monte_text p {
+  color: #ffffff;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.monte_text h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.monte_box {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.monte_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.monte_form {
+  display: flex;
+  justify-content: right;
+  background-color: #d0d1d1;
+}
+
+#nome_form {
+  padding: 5px;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  color: #000000;
+  margin: 10px;
+}
+
+#nome {
+  font: 500 1.25rem "Montserrat", sans-serif;
+  color: #000000;
+  padding: 5px;
+  margin: 0px 10px;
+  border-style: inset;
+  border-radius: 5px 10px;
+  width: 400px;
+}
+
+#email_form {
+  padding: 5px;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  color: #000000;
+  margin: 10px;
+}
+
+#email_formulario {
+  font: 500 1.25rem "Montserrat", sans-serif;
+  color: #000000;
+  padding: 5px;
+  margin: 0px 10px;
+  border-style: inset;
+  border-radius: 5px 10px;
+  width: 400px;
+}
+#fone_form {
+  padding: 5px;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  color: #000000;
+  margin: 10px;
+}
+
+#fone {
+  font: 500 1.25rem "Montserrat", sans-serif;
+  color: #000000;
+  padding: 5px;
+  margin: 0px 10px;
+  border-style: inset;
+  border-radius: 5px 10px;
+  width: 400px;
+}
+#comentario_form {
+  padding: 5px;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  color: #000000;
+  margin: 10px;
+}
+
+#comentario {
+  padding: 5px;
+  margin: 0px 10px;
+  border-style: inset;
+  border-radius: 5px 10px;
+  width: 400px;
+  height: 70px;
+}
+
+#submit {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 10px 110px;
+  background: linear-gradient(90deg, #00f800, #ffffff);
+  box-shadow: 0 10px 10px #181d24;
+  font: 700 1.25rem "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+/* Contato */
+
+.contato_background {
+  background-image: url(../imagens/contato_banner.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contato_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 300px;
+}
+
+.contato_text p {
+  color: #ffffff;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  text-align: center;
+  align-items: flex-end;
+}
+
+.contato_text h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.contato_box {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.contato_info {
+  display: flex;
+  flex-direction: column;
+  background-color: #d0d1d1;
+  width: 80%;
+}
+
+.contato_info h2 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.contato_info p {
+  color: #000000;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.contato_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Depoimentos */
+.dep_text {
+  margin-top: 250px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.dep_text p {
+  color: #ffffff;
+  font: 500 1.75rem "Montserrat", sans-serif;
+  padding: 15px;
+}
+.dep_text h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  padding: 0px;
+}
+
+#carrosel img {
+  display: none;
+}
+
+.dep_carousel {
+  display: flex !important;
+  justify-content: center;
+}
+
+.dep_show {
+  padding-bottom: 50px;
+}
+
+
+/* Responsividade */
+
+@media screen and (max-width: 1200px) {
+  /* Topo */
+  .logo {
+    width: 162px;
+    height: 68px;
+  }
+
+  #searchbar {
+    width: 249px;
+    height: 42px;
+  }
+
+  #searchbar_text {
+    padding-left: 1px;
+    font: 500 16px "Montserrat", sans-serif;
+    height: 17px;
+    width: 160px;
+  }
+
+  .search {
+    width: 25px;
+    height: 25px;
+  }
+
+  .cart,
+  .login {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu_bar {
+    display: flex;
+    width: 40px;
+    height: 40px;
+   
+  }
+
+  .icon_text_header {
+    display: none;
+  }
+
+  /* Barra de Menu*/
+  .position_menu {
+    display: flex;
+    flex-direction: column;
+    width: unset;
+  }
+
+  .menu {
+    display: none;
+  } 
+
+  .menu_background {
+    background-color: black;
+    width: 100%;
+  }
+
+  .menu a {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  /* Teste com Menu Jquery
+  .menu_show {
+    display: flex;
+  } */
+
+  /* Banner  */
+  #banner_text {
+    height: 350px;
+    font-size: 3rem;
+  }
+
+  /*Section Produtos Recomendados*/ 
+
+  .js-carousel-2 {
+    padding-bottom: 50px;
+  }
+
+  /*Barra de Ícones*/
+  .icons_background {
+    height: 120px;
+  }
+
+  .icon_text_section {
+    font: 500 1rem "Montserrat", sans-serif;
+  }
+
+  .atendimento,
+  .qualidade,
+  .entrega,
+  /*Newsletter e Rodapé*/
+  .newsletter,
+  .local,
+  .facebook,
+  .instagram,
+  .twitter {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* Seção Newsletter */
+  .news_text {
+    font: bold 1.3rem "Montserrat", sans-serif;
+  }
+
+  #email_newsletter {
+    height: 40px;
+    width: 70%;
+    font: 500 1rem "Montserrat", sans-serif;
+  }
+
+  /* Rodapé */
+  footer h3 {
+    font-size: 1.1rem;
+  }
+
+  footer nav a,
+  .atendimento_text,
+  .footer_text {
+    font-size: 1rem;
+  }
+
+  /* Galeria */
+  .galeria_text {
+    margin-top: 100px;
+  }
+
+  .galeria_text p {
+    font-size: 1.5rem;
+  }
+
+  .galeria_text h1 {
+    font-size: 3rem;
+  }
+
+  /*Contato*/
+  .contato_text {
+   padding-top: 100px;
+  }
+
+  .contato_text p,
+  .contato_info p {
+    font-size: 1.5rem;
+  }
+
+  .contato_text h1 {
+    font-size: 3rem;
+  }
+
+  .contato_info h2 {
+    font-size: 1.7rem;
+  }
+
+  /* Monte seu Pc */
+  .monte_text {
+   padding-top: 100px;
+  }
+
+  .monte_text p {
+    font-size: 1.5rem;
+  }
+
+  .monte_text h1 {
+    font-size: 3rem;
+  }
+
+  .monte_box {
+    background-image: url(../imagens/sala_gamer.jpg);
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .monte_form {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .monte_img {
+    display: none;
+  }
+
+  #nome_form,
+  #email_form,
+  #fone_form,
+  #comentario_form {
+    font-size: 1.5rem;
+  }
+
+  #nome,
+  #email,
+  #fone,
+  #comentario {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  #submit {
+    width: 100px;
+  }
+
+  /* Sobre */
+  .sobre_text {
+    margin-top: 100px;
+  }
+
+  .sobre_text p,
+  .sobre_box p {
+    font-size: 1.5rem;
+  }
+
+  .sobre_text h1 {
+    font-size: 3rem;
+  }
+
+  .sobre_box h3 {
+    font-size: 1.6rem;
+  }
+
+  /* Depoimentos */
+  .dep_text {
+    margin-top: 100px;
+  }
+
+  .dep_text p {
+    font-size: 1.5rem;
+  }
+
+  .dep_text h1 {
+    font-size: 3rem;
+  }
+  
+  .dep_show {
+    padding-bottom: 50px;
+    width: 70%;
+  }
+
+
+@media screen and (max-width: 768px) {
+
+   /* Topo */
+   header {
+    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 48px;
+  }
+
+  #searchbar {
+    background-color: #00f800;
+    border: none;
+    width: 20px;
+  }
+
+  #searchbar_text {
+    display: none;
+  }
+
+  .search,
+  .cart,
+  .login {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu_bar {
+    display: flex;
+    width: 20px;
+    height: 20px;
+   
+  }
+
+  .icon_text_header {
+    display: none;
+  }
+
+  /* Banner  */
+  #banner_text {
+    height: 210px;
+    font-size: 2rem;
+  }
+
+  /*Section Produtos Recomendados*/ 
+
+  .js-carousel-2 {
+    padding-bottom: 30px;
+  }
+
+  /*Barra de Ícones*/
+  .icons_background {
+    display: none;
+  }
+
+  /* Section Ofertas e Produtos Recomendados */
+  h2 {
+    font-size: 1.8rem;
+    padding: 40px 0px;
+  }
+
+  .ofertas_text,
+  .recomend_text  {
+    font-size: 1.5rem;
+  }
+
+  .btn_buy {
+    font-size: 1.5rem;
+    width: 180px;
+  }
+
+  /* Seção Newsletter */
+  .news_text {
+    font-size: 1.5rem;
+    padding: 30px;
+  }
+
+  #email_newsletter {
+    height: 30px;
+    width: 200px;
+    font-size: 1rem;
+  }
+
+   /*Newsletter e Rodapé*/
+   .newsletter,
+   .local,
+   .facebook,
+   .instagram,
+   .twitter {
+     height: 30px;
+     width: 30px;
+   }
+
+  /* Rodapé */
+  footer h3 {
+    font-size: 1.1rem;
+  }
+
+  footer nav a,
+  .atendimento_text,
+  .footer_text {
+    font-size: 1rem;
+  }
+
+   /* Galeria */
+   .galeria_text {
+    margin-top: 50px;
+  }
+
+  .galeria_text p {
+    font-size: 1.3rem;
+  }
+
+  .galeria_text h1 {
+    font-size: 2.7rem;
+  }
+
+  /*Contato*/
+  .contato_text {
+    padding-top: 50px;
+  }
+ 
+  .contato_text p,
+  .contato_info p {
+    font-size: 1rem;
+  }
+ 
+  .contato_text h1 {
+    font-size: 2.7rem;
+  }
+ 
+  .contato_info h2 {
+     font-size: 1.6rem;
+  }
+
+  .contato_info {
+    width: 96%;
+  }
+
+  /* Monte seu Pc */
+  .monte_text {
+    padding-top: 50px;
+  }
+ 
+  .monte_text p {
+    font-size: 1.3rem;
+  }
+ 
+  .monte_text h1 {
+    font-size: 2.7rem;
+  }
+ 
+  .monte_box {
+    background-image: url(../imagens/sala_gamer.jpg);
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+ 
+  .monte_form {
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+ 
+  .monte_img {
+    display: none;
+  }
+ 
+  #nome_form,
+  #email_form,
+  #fone_form,
+  #comentario_form {
+    font-size: 1.3rem;
+  }
+ 
+  #nome,
+  #email,
+  #fone,
+  #comentario {
+    font-size: 1rem;
+    text-align: center;
+    width: 80%;
+  }
+ 
+  #submit {
+    width: 100px;
+  }
+
+  /* Sobre */
+  .sobre_text {
+    margin-top: 50px;
+  }
+
+  .sobre_text p,
+  .sobre_box p {
+    font-size: 1.3rem;
+  }
+
+  .sobre_text h1 {
+    font-size: 2.7rem;
+  }
+
+  .sobre_box h3 {
+    font-size: 1.6rem;
+  }
+
+  .sobre_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Depoimentos */
+  .dep_text {
+    margin-top: 50px;
+  }
+
+  .dep_text p {
+    font-size: 1rem;
+  }
+
+  .dep_text h1 {
+    font-size: 2.7rem;
+  }
