@@ -476,7 +476,7 @@ footer nav a {
   margin: 10px;
 }
 
-#email_formulario {
+#email{
   font: 500 1.25rem "Montserrat", sans-serif;
   color: #000000;
   padding: 5px;
@@ -689,7 +689,7 @@ footer nav a {
   }
 
   .menu a {
-    font-size: 1rem;
+    font-size: 2rem;
     padding: 10px;
   }
 
@@ -912,6 +912,11 @@ footer nav a {
 
   .icon_text_header {
     display: none;
+  }
+
+  /* Barra de Menu*/
+  .menu a {
+    font-size: 1.5rem;
   }
 
   /* Banner  */
