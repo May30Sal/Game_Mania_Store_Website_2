@@ -1,6 +1,6 @@
 :canada:
 # "Game Mania Store" Website (Part 2)
-Last part of the final project created for the class Coding for Font-End on the Senai Fullstack Developer Course.<br/>
+Second part of the final project created for the class Coding for Font-End on the Senai Fullstack Developer Course.<br/>
 The goal of this project is to create a website for a fictitious store and demonstrate the concepts learned during the Front-End class.
 
 ### 📄Activities
@@ -12,6 +12,7 @@ The goal of this project is to create a website for a fictitious store and demon
 - [x] Apply features with Javascript to other pages
 - [x] Improve page functionality using Jquery
 - [x] Host the index(home) page on Github pages
+- [ ] Improve the website using API's
 
 ### 💻Tools used
 - HTML5
@@ -40,6 +41,7 @@ O objetivo deste projeto é criar um website para uma loja fictícia e particar 
 - [x] Aplicar funcionalidades com Javascript nas demais páginas
 - [x] Aprimorar funcinalidades das páginas utilizando Jquery
 - [x] Hospedar a página index(home) no Github pages
+- [ ] Aprimorar o website utilizando API's
 
 ### 💻Tecnologias
 - HTML5
