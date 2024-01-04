@@ -29,7 +29,7 @@ The goal of this project is to create a website for a fictitious store and demon
 
 :brazil:
 # Website da "Loja Game Mania" (Parte 2)
-Última parte do projeto final da disciplina Codificação para Font-End do Curso Senai Fullstack Developer.<br/>
+Segunda parte do projeto final da disciplina Codificação para Font-End do Curso Senai Fullstack Developer.<br/>
 O objetivo deste projeto é criar um website para uma loja fictícia e particar os conceitos apreendidos durante o curso de Front-End.
 
 ### 📄Atividades desenvolvidas
